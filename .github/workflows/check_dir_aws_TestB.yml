@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - develop
+    paths:S
+      - 'aws_TestB/**'
+jobs:
+  add_text:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |   
+          echo "aws_TestB" > upgate_dir.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "push-aws_TestB"
+          git push
+
