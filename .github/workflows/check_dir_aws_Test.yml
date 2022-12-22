@@ -1,7 +1,7 @@
 on:
   push:
-    branches:
-      - develop
+#    branches:
+#      - develop
     paths:
       - 'aws_Test/**'
 jobs:
