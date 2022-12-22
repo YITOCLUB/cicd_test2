@@ -6,8 +6,8 @@ jobs:
       - uses: actions/checkout@v2
       - run: |   
           echo "aws_Test" >> hello.txt
-          #git config user.name github-actions
-          #git config user.email github-actions@github.com
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add .
           git commit -m "push"
           git push
