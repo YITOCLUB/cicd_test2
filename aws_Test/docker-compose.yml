@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  testa:
+    image: ${DOCKER_REGISTRY-}testa
+    build:
+      context: .
+      dockerfile: TestA/Dockerfile
+    ports:
+      - "5902:80"
+      ##- "5903:443"
+    volumes:
+      - "/Users/user/Documents/test/work:/work"
+    environment:
+      ##ASPNETCORE_URLS: "https://+:443;http://+:80"
+      ##MySql_MaxRetryCount: 3
+      ##MySql_MaxRetryDelay: 3
+      ##ASPNETCORE_Kestrel__Certificates__Default__Password: password
+      ##ASPNETCORE_Kestrel__Certificates__Default__Path: /https/aspnetapp.pfx
+      TZ: Asia/Tokyo
+      LANG: ja_JP.UTF-8
