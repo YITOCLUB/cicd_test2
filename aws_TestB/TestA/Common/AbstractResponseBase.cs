@@ -1,4 +1,4 @@
-
+//1222 BBB12
 namespace Dto
 {
     public abstract class AbstractResponseBase
