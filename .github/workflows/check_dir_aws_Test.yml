@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - develop
-    paths:S
+    paths:
       - 'aws_Test/**'
 jobs:
   add_text:
