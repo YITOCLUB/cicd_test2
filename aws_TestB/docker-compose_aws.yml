@@ -1,0 +1,13 @@
+﻿## docker-compose_aws-03
+
+version: '3.4'
+
+services:
+  build_foobar:
+    image: testa001
+    build:
+      context: ./
+      dockerfile: TestA/Dockerfile
+    environment:
+      TZ: Asia/Tokyo
+      LANG: ja_JP.UTF-8
